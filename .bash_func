@@ -1,0 +1,55 @@
+# ~/.bash_func
+# Description : Shell functions
+# Author      : codmak
+# Date        : 2025-08-03
+# Version     : 1.0
+
+
+# ----------------------------------------
+# Node Version Manager (NVM)
+# ----------------------------------------
+
+load_nvm() {
+    # Determine NVM_DIR based on XDG specification
+    export NVM_DIR="${XDG_CONFIG_HOME:-$HOME/.nvm}"
+
+    # Load bash completion, if present
+    if [[ -s "$NVM_DIR/bash_completion" ]]; then
+        . "$NVM_DIR/bash_completion"
+    fi
+
+    # Load nvm core script
+    if [[ -s "$NVM_DIR/nvm.sh" ]]; then
+        . "$NVM_DIR/nvm.sh"
+    else
+        echo "nvm.sh not found in $NVM_DIR" >&2
+        return 1
+    fi
+}
+
+nvm() {
+    unset -f nvm
+    load_nvm || return 1
+    command nvm "$@"
+}
+
+
+# ----------------------------------------
+# Angular CLI
+# ----------------------------------------
+
+load_angular() {
+    # Load Angular CLI completion
+    if command -v ng &>/dev/null; then
+        . <(ng completion script)
+    else
+        echo "Angular CLI (ng) not found in PATH" >&2
+        return 1
+    fi
+}
+
+ng() {
+    unset -f ng
+    load_angular || return 1
+    command ng "$@"
+}
