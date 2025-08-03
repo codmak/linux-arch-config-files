@@ -1,0 +1,166 @@
+# ~/.bash_aliases
+# Description : Shell aliases for command-line efficiency
+# Author      : codmak
+# Date        : 2025-08-03
+# Version     : 1.0
+
+
+# SPECIAL
+#
+alias "?"="man"
+alias "??"="tldr"
+
+
+# A
+#
+
+
+# B
+#
+
+
+# C
+#
+alias c="clear"
+alias cal="cal --monday"
+
+
+# D
+#
+# Directory navigation (vifm)
+alias d="vifm"
+alias dh="vifm ~"
+alias dow="vifm ~/downloads"
+
+# Docker
+alias dk="docker"
+
+# Dictionary
+alias dict="sdcv"                   # Console dictionary
+
+
+# E
+#
+# Text editor
+alias e="nvim"
+
+
+# F
+#
+# Finance / Ledger
+alias f="ledger --file ~/.ledger/config.ledger"  # Open ledger file
+
+
+# G
+#
+# Git
+alias g="git"
+alias ga="git add"
+alias gb="git branch"
+alias gbs="git switch"
+alias gc="git commit --message"
+alias gi="git init"
+alias gs="git status"
+
+
+# H
+#
+alias h="history"
+
+
+# I
+#
+
+
+# J
+#
+
+
+# K
+#
+
+
+# L
+#
+# File listing
+alias l="ls --color"
+alias ll="ls -l --all --color"
+
+
+# M
+#
+# Mail
+alias m="neomutt"
+
+# Filesystem
+alias md="mkdir -p"
+alias mf="touch"
+
+
+# N
+#
+alias n="npm"                       # Node.js package manager
+alias news="newsboat"               # Terminal RSS reader
+
+
+# O
+#
+
+
+# P
+#
+# Package management (pacman)
+alias pu="sudo pacman -Sy --needed archlinux-keyring && pacman -Su"  # Update
+alias pi="sudo pacman -S --needed"  # Install
+alias ps="pacman -Ss"               # Search
+
+
+# Q
+#
+alias q="exit"
+
+
+# R
+#
+alias rz="source ~/.zshrc"
+
+
+# S
+#
+
+
+# T
+#
+# Task management
+alias t="task"                      # Taskwarrior
+alias ta="task add"
+
+# Typing practice
+alias type="gtypist.sh"             # Typing practice script
+
+
+# U
+#
+
+
+# V
+#
+alias v="nvim"
+
+
+# W
+#
+alias w="curl wttr.in"              # Weather report
+
+
+# X
+#
+
+
+# Y
+#
+
+
+# Z
+#
+alias zz="exit"
