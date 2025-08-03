@@ -1,0 +1,47 @@
+# ~/.taskrc
+# Description : Taskwarrior configuration file
+# Author      : codmak
+# Date        : 2025-08-03
+# Version     : 1.0
+
+
+# ----------------------------------------
+# Core settings
+# ----------------------------------------
+
+# Taskwarrior data directory
+data.location=$HOME/.task
+
+# Hook scripts directory
+hooks.location=$HOME/.task/hooks
+
+# Do not fail on missing database
+exit.on.missing.db=0
+
+# Editor for editing tasks (TUI)
+editor=nvim
+
+
+# ----------------------------------------
+# Date & formatting
+# ----------------------------------------
+
+# Start of the week
+weekstart=Monday
+
+# Days before due is considered "upcoming"
+due=7
+
+# Enable full regex support in filters
+regex=on
+
+
+# ----------------------------------------
+# UI verbosity & behavior
+# ----------------------------------------
+
+# Suppress verbose output
+verbose=label,new-id
+
+# Uncomment to enable minimalist theme
+include dark-16.theme
