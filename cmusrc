@@ -4,15 +4,16 @@
 # Date       : 2025-08-03
 # Version    : 1.0
 
-
-# ----------------------------------------
+# ------------------------------
 # Backend
-#
+# ------------------------------
+
 set output_plugin=alsa
 
-# ----------------------------------------
+# ------------------------------
 # Playback
-#
+# ------------------------------
+
 set continue=true
 set repeat=true
 set shuffle=tracks
@@ -20,9 +21,10 @@ set replaygain=album
 set replaygain_preamp=0
 set softvol=true
 
-# ----------------------------------------
+# ------------------------------
 # Interface
-#
+# ------------------------------
+
 set show_remaining_time=true
 set show_playback_position=true
 set show_current_bitrate=false
@@ -30,29 +32,33 @@ set show_hidden=false
 set status_display_program=
 set mouse=true
 
-# ----------------------------------------
+# ------------------------------
 # Library
-#
+# ------------------------------
+
 set follow=true
 set play_library=true
 
-# ----------------------------------------
+# ------------------------------
 # ALSA & DSP
-#
+# ------------------------------
+
 set dsp.alsa.device=default
 set mixer.alsa.device=default
 set mixer.alsa.channel=Master
 
-# ----------------------------------------
+# ------------------------------
 # Performance tweaks
-#
+# ------------------------------
+
 set auto_reshuffle=true
 set skip_track_info=true
 set start_view=sorted
 
-# ----------------------------------------
+# ------------------------------
 # Colors
-#
+# ------------------------------
+
 set color_cmdline_bg=default
 set color_cmdline_fg=default
 set color_error=lightred
